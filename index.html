@@ -36,7 +36,7 @@
           </div>
         </div>
       </nav>
-
+<!-- Beginning of Carousel -->
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,25 +44,31 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-item active slide1">
+            <img src="images/carrousel-slide1.png" class="d-block w-100" alt="carrousel-slide1">
+            <div class="carousel-caption d-inline d-md-block text-center d-flex flex-column justify-content-left align-items-left">
+                  <h1>Cuidamos dele como família</h1>
+                  <h3>Petsitting and Dogwalking</h3>
+                  <p>Precisa de se ausentar ou vai de férias? Não pode levar o seu patudinho consigo? Nós temos a solução. A Boo Whiskers presta serviços de petsitting ao domicilio para que o seu melhor amigo não sinta tanto a sua ausência e tenha os meus cuidados como se estivesse presente.</p>
+                  <h5><button><a href="">Agende já!</a></button></h5>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carrousel-slide2.png" class="d-block w-100" alt="carrousel-slide2">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h1>Cão energético?</h1>
+                  <h3>Dog Walking</h3>
+                  <p>Tem um cão com muitaaaaa energia? Precisa que o seu amigo de quatro patas seja passeado e estimulado em longas distâncias mas a sua vida pessoal não o permite? Nós fazêmo-lo por si!</p>
+                  <h5><button><a href="">Agende já!</a></button></h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="images/carrousel-slide3.png" class="d-block w-100" alt="carrousel-slide3">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h1>O seu melhor amigo é um roedor?</h1>
+                  <h3>Há espaço para todos!</h3>
+                  <p>O seu melhor amigo é um pequeno roedor, coelhinho, furão, hamster ou chinchila? Nós cuidamos dele também! Limpamos gaiolas, alimentamos e brincamos com o seu fiel amigo!</p>
+                  <h5><button><a href="">Agende já!</a></button></h5>
             </div>
           </div>
         </div>
@@ -75,12 +81,41 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!-- Ending of carousel -->
 
       <div class="sobre" id="section-sobre">
+        
+        <div class="img-sobre">
+          <img src="images/about-us.png" alt="about-us">
+        </div>
         <div class="text-sobre">
-
+          <h2>Sobre nós</h2>
+          <p class="main-text">Os M&M's do Petsitting</p>
+          <p class="text">Marta e Miguel, um casal verdadeiramente apaixonado por animais, prontos para atender às necessidades específicas do seu amiguinho enquanto está ausente, quer seja com petsitting ao domicilio como um passeio revigorante com o seu cão para que este gaste energia e se mantenha ativo. Se quiser ler mais sobre nós, visite a aba "Sobre nós"</p>
+          <br>
+          <img src="images/text-sobre.png" width="max-width" alt="">
         </div>
       </div>
+      <section id="agendar-section">
+        <div id="agendar-container">
+          <form action="">
+            <label for="name">
+              Nome: <input type="text" name="name" id="name" required>
+            </label><br>
+            <label for="tel">
+            Contacto: <input type="tel" name="tel" id="tel" required>
+            </label><br>
+            <label for="email">
+              Email: <input type="text" name="email" id="email" required>
+            </label><br>
+            <label for="textarea">
+              Mensagem: <textarea name="textarea" id="textarea"></textarea>
+            </label><br>
+            <input type="submit" id="agendar-btn" value="Enviar!">
+
+          </form>
+        </div>
+      </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
